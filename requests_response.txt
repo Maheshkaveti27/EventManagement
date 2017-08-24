@@ -1,0 +1,89 @@
+Login:
+
+URL: http://localhost:8080/EventManagement/api/v1/login  (POST)
+
+{
+	"username":"svr2",
+	"password":"123456"
+}
+
+EventPlanners/Users APIs:
+==========================
+
+Save:
+=====
+URL: http://localhost:8080/EventManagement/api/v1/users/save (POST)
+
+{
+	"username":"svr1",
+	"firstName":"venkat",
+	"lastName":"svr",
+	"role":"admin",
+	"phone":"2123233",
+	"email":"svr@svr.com"
+}
+
+Get All Users Details:
+======================
+
+URL: http://localhost:8080/EventManagement/api/v1/users (GET)
+
+Update Details:
+===============
+
+http://localhost:8080/EventManagement/api/v1/users/{username}  (PUT)
+
+{
+        "email": "svr@svr2u.com",
+        "firstName": "venkat2u",
+        "lastName": "svr2u",
+        "phone": "212323233u"
+}
+    
+
+Deleet User:
+===========
+    
+URL : http://localhost:8080/EventManagement/api/v1/users/{username} (DELEET)
+
+
+Change Password:
+===============
+
+URL:  http://localhost:8080/EventManagement/api/v1/users/changepassword (POST)
+
+{
+	"username":"svr1",
+	"password":"98715"
+}
+
+
+Company Info:
+===========
+Save Company Info:
+================
+
+URL: http://localhost:8080/EventManagement/api/v1/companyinfo (POST)
+
+{
+	"companyName":"svr&SVR Ltd.,",
+	"companyAddress":"Hyd",
+	"companyPhone":"132332",
+	"companyEmail":"admin@svr.com"
+}
+
+Update Company Info:
+===================
+URL: http://localhost:8080/EventManagement/api/v1/companyinfo/{companyId}   (PUT)
+
+{
+	"companyName":"svr&SVR Ltd., up",
+	"companyAddress":"Hyd up",
+	"companyPhone":"1323321",
+	"companyEmail":"adminu@svr.com"
+}
+
+Get Company INfo:
+=================
+
+URL : http://localhost:8080/EventManagement/api/v1/companyinfo/    (GET)
